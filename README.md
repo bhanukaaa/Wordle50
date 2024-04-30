@@ -6,6 +6,7 @@ Wordle50 is my version of the popular web-game wordle, which was also made using
 The whole web app uses multiple technologies learnt throughout CS50, and knowledge gained by further pursuing those languages.
 
 ## Languages and Libraries Used
+in original project only, not used in this refactored version *
 - Flask*
 - JavaScript
 - Python*
@@ -13,7 +14,6 @@ The whole web app uses multiple technologies learnt throughout CS50, and knowled
 - CSS
 - Jinja*
 - SQL*
-* in original project only, not used in this refactored version
 
 ## How it works
 
