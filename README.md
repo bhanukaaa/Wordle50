@@ -1,5 +1,6 @@
 # Wordle50
-
+# GitHub Pages Link
+<span style="font-size:1em;">[bhanukaaa.github.io/Wordle50](https://bhanukaaa.github.io/Wordle50)</span> 
 ## Description
 
 Wordle50 is my version of the popular web-game wordle, which was also made using C in CS50x's Problem Set 2.
