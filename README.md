@@ -1,23 +1,19 @@
-# Wordle50
-# GitHub Pages Link
+## GitHub Pages Link
 <span style="font-size:1em;">[bhanukaaa.github.io/Wordle50](https://bhanukaaa.github.io/Wordle50)</span> 
 ## Description
 
 Wordle50 is my version of the popular web-game wordle, which was also made using C in CS50x's Problem Set 2.
 The whole web app uses multiple technologies learnt throughout CS50, and knowledge gained by further pursuing those languages.
 
-## Languages, Libraries and Markup Languages Used
-- Flask
+## Languages and Libraries Used
+- Flask*
 - JavaScript
-- Python
+- Python*
 - HTML
 - CSS
-- Jinja
-- SQL
-
-## Introduction
-
-Inspired by Problem Set 2, and my own love for the game. My own take on this game was created.
+- Jinja*
+- SQL*
+* in original project only, not used in this refactored version
 
 ## How it works
 
@@ -27,7 +23,7 @@ Inspired by Problem Set 2, and my own love for the game. My own take on this gam
 
 * Upon every time a valid word is checked, the winHandler function will check for matches with the hidden word and handle the HTML body changes in the event of a Win or Loss.
 
-* The game also uses a XML Http Request that I got help with on stackoverflow to help me solve the problem of sending data to flask without using a form.
+* The game also uses an XML HTTP request that I got help with on StackOverflow to help me solve the problem of sending data to Flask without using a form.
 
 * Flask handles all the SQL and Jinja data, to allow the Leaderboard to function.
 
@@ -60,7 +56,7 @@ Note that the above 3 files have 3 versions each, one for all 3 versions of the 
 But as I ran into the problem of all ChatGPT's words not being the correct length, I had to build error handling to actually check the length of the word before starting the game.
 
 * As mentioned under how it works;
-The XML Http Request was learnt seperately to handle sending data to flask.
+The XML HTTP Requests were learnt seperately to handle sending data to flask.
 
 * CS50's Finance Problem, was heavy inspiration onto the core layouts and design of the web app.
 
