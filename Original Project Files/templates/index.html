@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Wordle50: Home
+{% endblock %}
+
+{% block main %}
+<h1>Welcome to <span style="color:red">Wordle</span>50</h1>
+<p>This whole web app was designed for CS50x's Final Project, inspired by the similarly named problem in Problem Set 2 of CS50x</p>
+<br>
+<p>Wordle is a popular online word-guessing game that challenges players to decipher a hidden word within a set number of attempts. It's a game of deductive reasoning, vocabulary, and a bit of luck.</p>
+Upon every guess you make, the letters will be coloured to help you deduce the hidden word.
+<div id="expln">
+  <div class="grid4">
+    <div class="cellE absent">✖</div>
+    <div class="cellE present">?</div>
+    <div class="cellE correct">✓</div>
+  </div>
+</div>
+<p>A gray coloured cell indicates a letter that does not exist within the hidden word.<br>
+A yellow coloured cell indicates a letter that is in the hidden word, but isn't in the correct position.<br>
+A green colored cell indicates a correctly placed letter corresponding to the hidden word</p>
+<h3>Ready to play? Try out one of our gamemodes below.</h3>
+<div class="container">
+  <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">4 Letter Wordle</h5>
+              <p class="card-text">The same core gameplay, but with 1 less letter to make things easier. Awards less points, but still just as fun as the classic</p>
+              <a href="/play4" class="btn btn-secondary mt-auto">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">5 Letter Wordle</h5>
+              <p class="card-text">The original version. The classic. Not too hard, but far from a piece of cake.</p>
+              <a href="/play5" class="btn btn-secondary mt-auto">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">6 Letter Wordle</h5>
+                <p class="card-text">Think the classic is too easy for you? Here's a serious step up in difficulty. With points awarded to match</p>
+                <a href="/play6" class="btn btn-secondary mt-auto">Play Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <p style="color:gray; font-size: small">The words used were generated using ChatGPT and other publicly available sources, and I have not personally gone through the thousands of words within the dictionaries running this web app, So apologies in advance for any offensive or nonsensical words included. There is built in error handling to catch any words that aren't the actual word length of the game version being played, as ChatGPT's word list isn't exactly accurate.</p>
+      {% endblock %}

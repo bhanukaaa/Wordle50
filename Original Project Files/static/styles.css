@@ -1,0 +1,169 @@
+nav .navbar-brand
+{
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+nav .navbar-brand .red
+{
+    color: red;
+}
+
+nav .navbar-brand .white
+{
+    color: black;
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px;
+    background-color: #1b1c1c;
+    min-height: 220px;
+    min-width: 300px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.04, 1.04);
+    box-shadow: 0 0 5px white, 0 0 25px white;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.card-title {
+    flex-grow: 1;
+    color: red;
+}
+
+.btn {
+    font-weight: bold;
+    transition: transform 0.2s ease-out, box-shadow 0.4s linear;
+}
+
+.btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 5px #ff96ad, 0 0 75px red;
+}
+
+body {
+    background-color: #2b2c2c;
+    color: white;
+}
+
+#wordle {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#expln {
+    display: grid;
+    place-items: center;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
+}
+
+.grid4 {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
+}
+
+.grid6 {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(6, auto);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    margin: 3px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: Arial
+}
+
+
+@keyframes flip {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.animated {
+    animation: flip 0.5s ease;
+}
+
+.lbtable {
+    color: white;
+}
+
+.correctword {
+    font-weight: bold;
+}
+
+.cellE {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 3px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: Arial
+}
+
+.correct {
+    background-color: green;
+    transition: box-shadow 0.2s ease-out, border 0.2s ease-out;
+}
+
+.present {
+    background-color: #FFCC00;
+    transition: box-shadow 0.2s ease-out, border 0.2s ease-out;
+}
+
+.absent {
+    background-color: gray;
+    transition: box-shadow 0.2s ease-out, border 0.2s ease-out;
+}
+
+.correct:hover {
+    box-shadow: 0 0 5px white, 0 0 20px green;
+    border: none;
+}
+
+.present:hover {
+    box-shadow: 0 0 5px white, 0 0 20px #ffcc00;
+    border: none;
+}
+
+.absent:hover {
+    box-shadow: 0 0 5px white, 0 0 20px gray;
+    border: none;
+}

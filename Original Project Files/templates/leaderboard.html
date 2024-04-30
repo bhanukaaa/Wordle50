@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Leaderboard
+{% endblock %}
+
+{% block main %}
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h3><span style="color:red">Wordle</span>50: Single Game Leaderboard</h3>
+          <table class="table lbtable">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for entry in sg %}
+              <tr class="lbrow">
+                <th scope="row">{{ entry.username }}</th>
+                <td>{{ entry.points }}</td>
+              </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h3><span style="color:red">Wordle</span>50: Total Point Leaderboard</h3>
+          <table class="table lbtable">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Total Points</th>
+                <th>Games Won</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for entry in lb %}
+              <tr class="lbrow">
+                <th scope="row">{{ entry.username }}</th>
+                <td>{{ entry.totalpoints }}</td>
+                <td>{{ entry.games }}</td>
+              </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+{% endblock %}
