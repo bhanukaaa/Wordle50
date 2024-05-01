@@ -2521,23 +2521,23 @@
             const gameDiv = document.getElementById("wordle");
             gameDiv.innerHTML = `
           <div style="font-size:large">
-              <img src="/src/congrats.png" width="500px"><br><br>
+              <img src="../assets/congrats.png" width="500px"><br><br>
               <p>The word was <span class="correctword">${gameData.correctWord}</span></p>
               <p>You guessed it in ${gameData.currentRow} tries</p>
-              <a href="/play${wordLength}" class="btn btn-secondary mt-auto">Play Again</a>
+              <a href="play${wordLength}" class="btn btn-secondary mt-auto">Play Again</a>
               <br><br>
-              <a href="/index.html" class="btn btn-secondary mt-auto">Main Menu</a>
+              <a href="../index.html" class="btn btn-secondary mt-auto">Main Menu</a>
           </div>
           `;
           } else if (gameData.currentRow === noOfTries) {
             const gameDiv = document.getElementById("wordle");
             gameDiv.innerHTML = `
           <div style="font-size:large">
-              <img src="/src/nicetry.png" width="400px"><br><br>
+              <img src="../assets/nicetry.png" width="400px"><br><br>
               <p>The Word was <span class="correctword">${gameData.correctWord}</span></p>
-              <a href="/play${wordLength}.html" class="btn btn-secondary mt-auto">Try Again</a>
+              <a href="play${wordLength}.html" class="btn btn-secondary mt-auto">Try Again</a>
               <br><br>
-              <a href="/index.html" class="btn btn-secondary mt-auto">Main Menu</a>
+              <a href="../index.html" class="btn btn-secondary mt-auto">Main Menu</a>
           </div>
           `;
           }
